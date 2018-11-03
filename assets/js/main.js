@@ -116,9 +116,7 @@
 
 
 	$("a[href$='/docs/CV.pdf']").click( function() {
-        ga('send', 'event', 'PDF Downloads', 'Click', 'CV Download', {
-		  nonInteraction: true
-		});
+        ga('send', 'event', 'PDF Downloads', 'Click', 'CV Download', );
 	});
 
 })(jQuery);
