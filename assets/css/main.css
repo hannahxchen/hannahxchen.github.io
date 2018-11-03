@@ -98,7 +98,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #787878;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -122,20 +122,23 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #787878;
-		font-weight: 400;
+		color: #137856;
+		font-size: 1.05em;
+		font-weight: 600;
 	}
 
 	em, i {
 		font-style: italic;
+		font-size: 1.0em;
 	}
 
 	p {
 		margin: 0 0 2em 0;
+		font-size: 1.0em;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #787878;
+		color: #2F4F4F;
 		font-weight: 400;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -2541,12 +2544,12 @@ input, select, textarea {
 		}
 
 		.work-item h3 {
-			font-size: 1em;
+			font-size: 1.25em;
 			margin: 0 0 0.5em 0;
 		}
 
 		.work-item p {
-			font-size: 0.8em;
+			font-size: 0.9em;
 			line-height: 1.5em;
 			margin: 0;
 		}
@@ -2955,6 +2958,14 @@ input, select, textarea {
 				font-size: 12pt;
 			}
 
+			.navbar {
+				display: none;
+			}
+
+			.menu {
+				display: block;
+			}
+
 	}
 
 /* Large */
@@ -3277,4 +3288,12 @@ input, select, textarea {
 .panel-body p {
 	min-height: 80px;
 	max-height: 80px;
+}
+
+img {
+	image-orientation: from-image;
+}
+
+article h3 {
+	font-size: 18px;
 }
