@@ -114,4 +114,11 @@
 
 			});
 
+			$('header a').on('click', function () {
+				var addressValue = $(this).attr("href");
+				ga('send', 'event', 'linkClicks', 'click', addressValue, {
+				  nonInteraction: true
+				});
+			});
+
 })(jQuery);
