@@ -121,7 +121,7 @@
 
 			$('section').waypoint(function() {
 			   var $sectionID = $(this.element).attr('id');
-			   ga('send', 'event', 'sectionScroll', 'scroll', sectionID);
+			   ga('send', 'event', 'sectionScroll', 'scroll', $sectionID);
 			},{offset:'25%'});
 
 })(jQuery);
