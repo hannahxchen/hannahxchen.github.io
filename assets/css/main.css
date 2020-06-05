@@ -26,7 +26,7 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, section {
 	display: block;}
 
 body {
@@ -72,6 +72,14 @@ input, select, textarea {
 	appearance: none;
 }
 
+.navbar {
+	display: none;
+}
+
+.menu {
+	display: block;
+}
+
 /* Basic */
 
 	html {
@@ -100,7 +108,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #283a35;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16pt;
+		font-size: 18pt;
 		font-weight: 400;
 		line-height: 1.75em;
 	}
@@ -111,7 +119,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #4ea2de;
 		text-decoration: none;
 	}
 
@@ -121,7 +129,7 @@ input, select, textarea {
 			text-decoration: none;
 		}
 
-	strong, b {
+	strong{
 		color: #137856;
 		font-size: 1.05em;
 		font-weight: 600;
@@ -134,7 +142,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
-		font-size: 1.05em;
+		/*font-size: 1.05em;*/
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -170,7 +178,7 @@ input, select, textarea {
 	}
 
 	h5 {
-		font-size: 0.9em;
+		font-size: 0.8em;
 		line-height: 1.5em;
 	}
 
@@ -2586,7 +2594,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 35%;
+		width: 25%;
 	}
 
 		#header > * {
@@ -2664,7 +2672,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		margin-left: 35%;
+		margin-left: 30%;
 		max-width: 54em;
 		padding: 8em 4em 4em 4em;
 		width: calc(100% - 35%);
@@ -2672,8 +2680,8 @@ input, select, textarea {
 
 		#main > section {
 			border-top: solid 2px #efefef;
-			margin: 2em 0 0 0;
-			padding: 3em 0 0 0;
+			margin: 1em 0 0 0;
+			padding: 1em 0 0 0;
 		}
 
 			#main > section:first-child {
@@ -2953,9 +2961,16 @@ input, select, textarea {
 	@media screen and (max-width: 1800px) {
 
 		/* Basic */
+			#main {
+				margin-left: 30%;
+			}
 
+			#header {
+				width: 27%;
+			}
+			
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 			.navbar {
@@ -2970,12 +2985,16 @@ input, select, textarea {
 
 /* Large */
 
-	@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1300px) {
 
 		/* Header */
 
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
 			#header {
-				padding: 6em 3em 3em 3em;
+				padding: 6em 3em 3em 2em;
 				width: 30%;
 			}
 
@@ -3006,7 +3025,7 @@ input, select, textarea {
 			#main {
 				margin-left: 30%;
 				max-width: none;
-				padding: 6em 3em 3em 3em;
+				padding: 6em 3em 3em 4em;
 				width: calc(100% - 30%);
 			}
 
@@ -3022,7 +3041,7 @@ input, select, textarea {
 
 /* Medium */
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 900px) {
 
 		/* Basic */
 
@@ -3112,7 +3131,7 @@ input, select, textarea {
 
 /* Small */
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 750px) {
 
 		/* Basic */
 
@@ -3167,7 +3186,8 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				padding: 2.25em 1.5em 0.25em 1.5em;
+				font-size: 10pt;
+				padding: 2.25em 4em 0.25em 3em;
 			}
 
 				#main > section {
@@ -3188,6 +3208,7 @@ input, select, textarea {
 
 			.navbar {
 				display: block;
+				font-size: 15px;
 			}
 
 			.menu {
@@ -3203,7 +3224,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 4.5em 1.5em;
+				padding: 0.5em 1.5em 1.5em;
 			}
 
 				#header h1 br {
@@ -3232,7 +3253,7 @@ input, select, textarea {
 
 .navbar {
   margin-top: 15px;
-  /*border-color: rgba(111,111,111,0.2) transparent transparent;*/
+  border-color: rgba(111,111,111,0.2) transparent transparent;
 }
 
 .navbar-default {
@@ -3285,7 +3306,7 @@ input, select, textarea {
 	line-height: normal;
 }
 
-.panel-body p {
+.panel p {
 	min-height: 80px;
 	max-height: 80px;
 }
@@ -3296,4 +3317,10 @@ img {
 
 article h3 {
 	font-size: 18px;
+}
+
+#publication b{
+	color: #1a1a1a;
+	font-size: 1.02em;
+	font-weight: 800;
 }
