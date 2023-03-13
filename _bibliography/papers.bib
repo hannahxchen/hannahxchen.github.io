@@ -1,0 +1,46 @@
+---
+---
+
+@inproceedings{chen-etal-2022-balanced,
+    title = "Balanced Adversarial Training: Balancing Tradeoffs between Fickleness and Obstinacy in NLP Models",
+    author = "Chen, Hannah  and Ji, Yangfeng  and Evans, David",
+    booktitle = "EMNLP 2022",
+    month = dec,
+    year = "2022",
+    publisher = "Association for Computational Linguistics",
+    acl = "",
+    arxiv="2210.11498",
+    code="https://github.com/hannahxchen/balanced-adversarial-training",
+    abstract = "Traditional (fickle) adversarial examples involve finding a small perturbation that does not change an input's true label but confuses the classifier into outputting a different prediction. Conversely, obstinate adversarial examples occur when an adversary finds a small perturbation that preserves the classifier's prediction but changes the true label of an input. Adversarial training and certified robust training have shown some effectiveness in improving the robustness of machine learnt models to fickle adversarial examples. We show that standard adversarial training methods focused on reducing vulnerability to fickle adversarial examples may make a model more vulnerable to obstinate adversarial examples, with experiments for both natural language inference and paraphrase identification tasks. To counter this phenomenon, we introduce Balanced Adversarial Training, which incorporates contrastive learning to increase robustness against both fickle and obstinate adversarial examples."
+}
+
+@inproceedings{chen-etal-2020-finding,
+    title = "Finding {F}riends and Flipping Frenemies: Automatic Paraphrase Dataset Augmentation Using Graph Theory",
+    author = "Chen, Hannah  and Ji, Yangfeng  and Evans, David",
+    booktitle = "Findings of EMNLP 2020",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    acl = "https://aclanthology.org/2020.findings-emnlp.426",
+    arxiv="2011.01856",
+    code="https://github.com/hannahxchen/automatic-paraphrase-dataset-augmentation",
+    doi = "10.18653/v1/2020.findings-emnlp.426",
+    pages = "4741--4751",
+    abstract = "Most NLP datasets are manually labeled, so suffer from inconsistent labeling or limited size. We propose methods for automatically improving datasets by viewing them as graphs with expected semantic properties. We construct a paraphrase graph from the provided sentence pair labels, and create an augmented dataset by directly inferring labels from the original sentence pairs using a transitivity property. We use structural balance theory to identify likely mislabelings in the graph, and flip their labels. We evaluate our methods on paraphrase models trained using these datasets starting from a pretrained BERT model, and find that the automatically-enhanced training sets result in more accurate models.",
+}
+
+@inproceedings{chen-etal-2020-pointwise,
+    title = "Pointwise Paraphrase Appraisal is Potentially Problematic",
+    author = "Chen, Hannah  and Ji, Yangfeng  and Evans, David",
+    booktitle = "ACL 2020 Student Research Workshop",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    acl = "https://aclanthology.org/2020.acl-srw.20",
+    arxiv="2005.11996",
+    doi = "10.18653/v1/2020.acl-srw.20",
+    pages = "150--155",
+    abstract = "The prevailing approach for training and evaluating paraphrase identification models is constructed as a binary classification problem: the model is given a pair of sentences, and is judged by how accurately it classifies pairs as either paraphrases or non-paraphrases. This pointwise-based evaluation method does not match well the objective of most real world applications, so the goal of our work is to understand how models which perform well under pointwise evaluation may fail in practice and find better methods for evaluating paraphrase identification models. As a first step towards that goal, we show that although the standard way of fine-tuning BERT for paraphrase identification by pairing two sentences as one sequence results in a model with state-of-the-art performance, that model may perform poorly on simple tasks like identifying pairs with two identical sentences. Moreover, we show that these models may even predict a pair of randomly-selected sentences with higher paraphrase score than a pair of identical ones.",
+}

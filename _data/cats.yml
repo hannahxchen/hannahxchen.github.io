@@ -1,0 +1,29 @@
+marshall:
+  - img: assets/img/cats/marshall.jpg
+    description: I adopted this pretty boy around the start of the pandemic (2020).
+  - img: assets/img/cats/marshall-sit.jpg
+    description: He's such a weirdo sometimes.
+  - img: assets/img/cats/marshall-tie.jpg
+    description: Look at this distinguished gentleman!
+  - img: assets/img/cats/baby-marshall.jpg
+    description: Baby Marshall when he first came.
+
+hayley:
+  - img: assets/img/cats/hayley.jpg
+    description: After having Marshall for 2 years, we adopted this cute little angel.
+  - img: assets/img/cats/hayley-bowtie.jpg
+    description: "#catswithbowtie."
+  - img: assets/img/cats/sploot-girl.jpg
+    description: Sploot girl always splooting.
+  - img: assets/img/cats/hayley-dumbbell.jpg
+    description: She's working on becoming strong and big enough to beat up her big brother one day...
+
+marshall_and_hayley:
+  - img: assets/img/cats/marshall-hayley.jpg
+    description: My precious furr babies.
+  - img: assets/img/cats/marshall-hayley-2.jpg
+    description: The child belongs to me!
+  - img: assets/img/cats/window-cats.jpg
+    description: The guard cats.
+  - img: assets/img/cats/3d-printer-inspector.jpg
+    description: 3D printer inspectors.
