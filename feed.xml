@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-03-13T17:03:30-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">Balancing Tradeoffs between Fickleness and Obstinacy in NLP Models</title><link href="http://localhost:4000/blog/2022/bat/" rel="alternate" type="text/html" title="Balancing Tradeoffs between Fickleness and Obstinacy in NLP Models" /><published>2022-11-13T00:00:00-05:00</published><updated>2022-11-13T00:00:00-05:00</updated><id>http://localhost:4000/blog/2022/bat</id><content type="html" xml:base="http://localhost:4000/blog/2022/bat/"><![CDATA[<p><a href="https://hannahxchen.github.io/">Hannah Chen</a>, <a href="http://yangfengji.net/">Yangfeng
+Ji</a>, <a href="http://www.cs.virginia.edu/~evans/">David
+Evans</a>. <em>Balanced Adversarial
+Training: Balancing Tradeoffs between Fickleness and Obstinacy in NLP
+Models</em>. In <a href="https://2022.emnlp.org/"><em>The 2022 Conference on Empirical Methods in Natural
+Language Processing</em></a> (EMNLP), Abu Dhabi,
+7-11 December 2022.  [<a href="https://arxiv.org/abs/2210.11498">ArXiv</a>]</p>
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xQH51lIVDyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</center>
+
+<h2 id="adversarial-examples">Adversarial Examples</h2>
+<p>At the broadest level, an adversarial example is an input crafted intentionally to confuse a model. However, most work focus on the defintion as an input constructed by applying a small perturbation that preserves the ground truth label but changes model’s output <a href="https://arxiv.org/abs/1412.6572">(Goodfellow et al., 2015)</a>. We refer it as a <strong>fickle adversarial example</strong>. On the other hand, attackers can target an opposite objective where the inputs are made with minimal changes that change the ground truth labels but retain model’s predictions <a href="https://arxiv.org/abs/1811.00401">(Jacobsen et al., 2018)</a>. We refer these malicious inputs as <strong>obstinate adversarial examples</strong>.</p>
+
+<p>
+    <center>
+    <a href="/assets/img/bat/image_AEs.png"><img src="/assets/img/bat/image_AEs.png" width="60%" align="center" /></a>
+    <br />
+    <em>Adversarial examples for images</em>
+    </center>
+</p>
+
+<p>
+    <center>
+    <a href="/assets/img/bat/nlp_AEs.png"><img src="/assets/img/bat/nlp_AEs.png" width="50%" align="center" /></a>
+    <br />
+    <em>Adversarial examples for texts (<span style="color:red;">Red</span>: synonym substitution, <span style="color:blue;">Blue</span>: antonym substitution)</em>
+    </center>
+</p>
+
+<h2 id="distance-oracle-misalignment">Distance-Oracle Misalignment</h2>
+<p>Previous work from <a href="https://arxiv.org/abs/2002.04599">(Tramer et al., 2020)</a> show that for image classification models, increasing robustness against fickle adversarial examples may also increase vulnerability to obstinate adversarial attacks. They suggested the reason behind this is may be the <em>distance-oracle misalignment</em> during fickle adversarial training. The norm bounded perturbation used for certified robust training may not align with the ground truth decision boundary. We hypothesize that this phenomenon may also exist in NLP models since the automatically-generated adversarial examples for NLP models can be imperfect sometimes, e.g., synonym word substitutions for constructing fickle adversarial examples may not preserve the ground truth label of the input.</p>
+<center>
+<a href="/assets/img/bat/distance_misalignment.png"><img src="/assets/img/bat/distance_misalignment.png" width="50%" align="center" /></a>
+</center>
+
+<h2 id="robustness-tradeoffs">Robustness Tradeoffs</h2>
+<p>To test our hypothsis, we perform obstinate adversarial attacks on models trained with normal training and fickle adversarial training. We use antonym word substitution for obstinate attack and SAFER <a href="https://arxiv.org/abs/2005.14424">(Ye et al., 2020)</a>, a certified robust training for NLP models, as the fickle adversarial defense. We visualize the antonym attack success rate on models trained with SAFER at each training epoch. We found that as the synonym attack success rate decreases over the course of training, the antonym attack success rate increases as well. The antonym attack success rate is also higher than the normal training baseline. This results prove our hypothesis that optimizing only fickle adversarial robustness can result in models being more vulnerable to obstinate adversarial examples.</p>
+
+<center>
+<a href="/assets/img/bat/robustness-tradeoffs.png"><img src="/assets/img/bat/robustness-tradeoffs.png" width="80%" align="center" /></a>
+</center>
+
+<h2 id="balanced-adversarial-training-bat">Balanced Adversarial Training (BAT)</h2>
+<p>We adapt constrastive learning by pairing fickle adversarial examples with the original examples as positive pairs and obstinate adversarial examples with the original examples as negative pairs. The goal of training is to minimize the distance between the postive pairs and maximize the distance between the negative pairs. We propose BAT-Pairwise and BAT-Triplet, where each combines a normal training objective with a pairwise or triplet loss.</p>
+
+<center>
+<a href="/assets/img/bat/bat.png"><img src="/assets/img/bat/bat.png" width="80%" align="center" /></a>
+</center>
+<p><br /></p>
+
+<p>We evaluate BAT based on synonym (fickle) and antonym (obstinate) attack success rate and compare it with normal training, and two fickle adversarial defenses, A2T (vanilla adversarial training) <a href="https://arxiv.org/abs/2109.00544">(Yoo and Qi, 2021)</a> and SAFER (certified robust training). We show that both BAT-Pairwise and BAT-Triple result in better robustness against antonym attacks compared to other training baselines and are more robust against synonym attacks than the normal training method. While fickle adversarial defenses (A2T and SAFER) perform best when evaluated solely based on fickleness robustness, they have worse obstinacy robustness. Our proposed method gives a better balance between the two types of robustness.</p>
+
+<center>
+<a href="/assets/img/bat/bat-results.png"><img src="/assets/img/bat/bat-results.png" width="80%" align="center" /></a>
+</center>
+<p><br /></p>
+
+<p>We compare the learned representations of models trained with BAT and other training baselines. We project the embeddings to 2 dimensional space with t-SNE. We see that boh fickle and obstinate examples are close to the original examples when the model is trained with normal training or SAFER. With BAT-Pairwise and BAT-Triplet, only the fickle examples and the original examples are close to each other while the obstinate examples are further away from them. This results match with BAT’s training goal and show that BAT can mitigate the distance-oracle misalignment.</p>
+<center>
+<a href="/assets/img/bat/tsne.png"><img src="/assets/img/bat/tsne.png" width="80%" align="center" /></a>
+</center>
+
+<h2 id="summary">Summary</h2>
+
+<p>We show that robustness tradeoffs between ficklenss and obstinacy exist in NLP models. To counter this, we propose Balanced Adversarial Training (BAT) and show that it helps increase robustness against both fickle and obstinate adversarial examples.</p>
+
+<p><b>Paper:</b> [<a href="https://arxiv.org/abs/2210.11498">ArXiv</a>]</p>
+
+<p><b>Code:</b> <a href="https://github.com/hannahxchen/balanced-adversarial-training">https://github.com/hannahxchen/balanced-adversarial-training</a></p>]]></content><author><name></name></author><category term="adversarial exmples" /><summary type="html"><![CDATA[We introduce Balanced Adversarial Training (BAT) to train models that are robust to two different types of adversarial examples.]]></summary></entry></feed>
