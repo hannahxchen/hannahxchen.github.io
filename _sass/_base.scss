@@ -84,7 +84,7 @@ blockquote {
 
 .post-description {
   margin-bottom: 2rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   a {
     color: inherit;
     &:hover {
@@ -211,6 +211,7 @@ blockquote {
 .news table th {
   font-size: 1.2rem;
   color: var(--global-text-color);
+  width: 100px;
 }
 
 
@@ -557,11 +558,34 @@ html.transition *:after {
     }
   }
   .post-content{
+    font-size: 1.12rem;
         blockquote {
           border-left: 5px solid var(--global-theme-color);
           padding: 8px;
       }
-}
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+  }
+  table {
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    th, td{
+      font-size: 1.15rem;
+      padding: 5px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    th {
+      background-color: #f2f2f2;
+      font-weight: 450;
+    }
+    tr:nth-child(even) {background-color: #f2f2f2;}
+  }
 }
 
 .post-tags {
