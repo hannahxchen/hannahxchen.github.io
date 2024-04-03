@@ -1,6 +1,19 @@
 ---
 ---
 
+@inproceedings{chen-etal-2024-addressing,
+    title = "Addressing Both Statistical and Causal Gender Fairness in NLP Models",
+    author = "Chen, Hannah  and Ji, Yangfeng  and Evans, David",
+    booktitle = "Findings of NAACL 2024",
+    month = jun,
+    year = "2024",
+    publisher = "Association for Computational Linguistics",
+    acl = "",
+    arxiv="2404.00463",
+    code="https://github.com/hannahxchen/composed-debiasing",
+    abstract = "Statistical fairness stipulates equivalent outcomes for every protected group, whereas causal fairness prescribes that a model makes the same prediction for an individual regardless of their protected characteristics. Counterfactual data augmentation (CDA) is effective for reducing bias in NLP models, yet models trained with CDA are often evaluated only on metrics that are closely tied to the causal fairness notion; similarly, sampling-based methods designed to promote statistical fairness are rarely evaluated for causal fairness. In this work, we evaluate both statistical and causal debiasing methods for gender bias in NLP models, and find that while such methods are effective at reducing bias as measured by the targeted metric, they do not necessarily improve results on other bias metrics. We demonstrate that combinations of statistical and causal debiasing techniques are able to reduce bias measured through both types of metrics."
+}
+
 @inproceedings{chen-etal-2022-balanced,
     title = "Balanced Adversarial Training: Balancing Tradeoffs between Fickleness and Obstinacy in NLP Models",
     author = "Chen, Hannah  and Ji, Yangfeng  and Evans, David",
@@ -8,9 +21,11 @@
     month = dec,
     year = "2022",
     publisher = "Association for Computational Linguistics",
-    acl = "",
+    acl = "https://aclanthology.org/2022.emnlp-main.40",
     arxiv="2210.11498",
     code="https://github.com/hannahxchen/balanced-adversarial-training",
+    doi = "10.18653/v1/2022.emnlp-main.40",
+    pages = "632--647",
     abstract = "Traditional (fickle) adversarial examples involve finding a small perturbation that does not change an input's true label but confuses the classifier into outputting a different prediction. Conversely, obstinate adversarial examples occur when an adversary finds a small perturbation that preserves the classifier's prediction but changes the true label of an input. Adversarial training and certified robust training have shown some effectiveness in improving the robustness of machine learnt models to fickle adversarial examples. We show that standard adversarial training methods focused on reducing vulnerability to fickle adversarial examples may make a model more vulnerable to obstinate adversarial examples, with experiments for both natural language inference and paraphrase identification tasks. To counter this phenomenon, we introduce Balanced Adversarial Training, which incorporates contrastive learning to increase robustness against both fickle and obstinate adversarial examples."
 }
 

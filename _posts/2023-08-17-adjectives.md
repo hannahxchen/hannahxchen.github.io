@@ -3,6 +3,7 @@ layout: post
 title: Adjectives Can Reveal Gender Biases Within NLP Models
 date: 2023-08-17
 tags: ["adversarial exmples", "LLMs", "generative AI", "bias"]
+categories: ["paper"]
 description: We extend WinoBias dataset by incorporating gender-associated adjectives and reveal underlying gender bias in GPT-3.5 model.
 ---
 
