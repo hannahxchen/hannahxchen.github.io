@@ -1,0 +1,125 @@
+{
+    "basics": {
+      "name": "Hannah Chen",
+      "label": "PhD Student",
+      "image": "",
+      "email": "yc4dx@virginia.edu",
+      "summary": "",
+      "location": {
+        "address": "Rice Hall 336, 85 Engineer’s Way",
+        "postalCode": "VA 22903",
+        "city": "Charlottesville",
+        "countryCode": "US",
+        "region": "Virginia"
+      },
+      "profiles": [
+        {
+          "network": "Twitter",
+          "username": "hannah_roami",
+          "url": "https://twitter.com/hannah_roami"
+        }
+      ]
+    },
+    "work": [
+      {
+        "name": "Cryptography and Privacy Group, Microsoft Research",
+        "position": "Research Intern",
+        "startDate": "2022-02-01",
+        "endDate": "2022-05-14",
+        "highlights": [
+            "Investigated privacy leakage in code generation models.", 
+            "Experimented with membership inference and training data reconstruction attack",
+            "Proposed several mitigation methods to improve current pipeline"
+        ]
+      },
+      {
+        "name": "Cybersecurity Technology Institute, Institute for Information Industry",
+        "position": "Machine Learning Intern",
+        "startDate": "2018-06-01",
+        "endDate": "2018-12-31",
+        "highlights": [
+            "Exploratory data analysis of Tweets from security experts.", 
+            "Built binary classifiers for Secbuzzer System to identify security related Tweets.",
+            "Built and trained Word2Vec and Doc2Vec models to find similarity between contexts.",
+            "Built classification pipeline for streaming data stored in Elasticsearch."
+        ]
+      },
+      {
+        "name": "Lab of Ubiquitous Security and Applications, Chang Gung University",
+        "position": "Undergraduate Research Assistant",
+        "startDate": "2018-06-01",
+        "endDate": "2018-12-31",
+        "highlights": [
+            "Participated in Prof. Chien-Lung Hsu’s IoT security research project.", 
+            "Implemented device authentication using NTRU encryption in Java.",
+            "Programmed Raspberry Pi sensors to capture environmental data."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Virginia",
+        "location": "Charlottesville, VA",
+        "url": "https://www.virginia.edu/",
+        "area": "Computer Science",
+        "studyType": "PhD",
+        "startDate": "2019-08",
+        "endDate": "now"
+      },
+      {
+        "institution": "Chang Gung University",
+        "location": "Taoyuan, Taiwan",
+        "url": "https://wwwen.cgu.edu.tw/",
+        "area": "Information Management",
+        "studyType": "Bachelor",
+        "startDate": "2014-09",
+        "endDate": "2018-06"
+      }
+    ],
+    "awards": [
+      {
+        "title": "UVA Engineering Dean’s Scholar Fellowship",
+        "date": "2019",
+        "awarder": "University of Virginia School of Engineering & Applied Science"
+      },
+      {
+        "title": "Presidential Awards",
+        "date": "2016, 2017",
+        "awarder": "Chang Gung University",
+        "summary": "Top 3% of class; 2016 Fall, 2017 Spring, 2017 Fall"
+      },
+      {
+        "title": "First runner-up of Chang Gung University English Speech Contest",
+        "date": "2014",
+        "awarder": "Chang Gung University"
+      }
+    ],
+    "volunteer": [
+      {
+        "organization": "IEEE-HKN Gamma Pi Chapter at UVA",
+        "position": "Outreach volunteer",
+        "startDate": "2021-04",
+        "endDate": "2021-05",
+        "summary": "Participated in events and created activities for High School outreach programs."
+      },
+      {
+        "organization": "The Haven at Charlottesville",
+        "position": "Volunteer",
+        "startDate": "2021-04",
+        "endDate": "2021-06",
+        "summary": "Donation processing, food donation sorting, and cooking and serving food."
+      }
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "fluency": "Fluent",
+        "icon": ""
+      },
+      {
+        "language": "Mandarin Chinese",
+        "fluency": "Native speaker",
+        "icon": ""
+      }
+    ]
+  }
