@@ -4,6 +4,7 @@ permalink: /mycats/
 title: my cats
 description: Cute pictures of my cats.
 nav: true
+nav_order: 5
 ---
 
 <!-- pages/mycats.md -->
