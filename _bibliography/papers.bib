@@ -1,6 +1,18 @@
 ---
 ---
 
+@article{chen2024mismeasuremanmodelsevaluating,
+      title = {The Mismeasure of Man and Models: Evaluating Allocational Harms in Large Language Models}, 
+      author = {Hannah Chen and Yangfeng Ji and David Evans},
+      month = aug,
+      year = {2024},
+      journal = "ArXiv Preprint",
+      arxiv = {2408.01285},
+      url = {https://arxiv.org/abs/2408.01285}, 
+      code = "https://github.com/hannahxchen/llm-allocational-harm-eval",
+      abstract = "Large language models (LLMs) are now being considered and even deployed for applications that support high-stakes decision-making, such as recruitment and clinical decisions. While several methods have been proposed for measuring bias, there remains a gap between predictions, which are what the proposed methods consider, and how they are used to make decisions. In this work, we introduce Rank-Allocational-Based Bias Index (RABBI), a model-agnostic bias measure that assesses potential allocational harms arising from biases in LLM predictions. We compare RABBI and current bias metrics on two allocation decision tasks. We evaluate their predictive validity across ten LLMs and utility for model selection. Our results reveal that commonly-used bias metrics based on average performance gap and distribution distance fail to reliably capture group disparities in allocation outcomes, whereas RABBI exhibits a strong correlation with allocation disparities. Our work highlights the need to account for how models are used in contexts with limited resource constraints."
+}
+
 @inproceedings{chen-etal-2024-addressing,
     title = "Addressing Both Statistical and Causal Gender Fairness in NLP Models",
     author = "Chen, Hannah  and Ji, Yangfeng  and Evans, David",
@@ -8,9 +20,11 @@
     month = jun,
     year = "2024",
     publisher = "Association for Computational Linguistics",
-    acl = "",
-    arxiv="2404.00463",
-    code="https://github.com/hannahxchen/composed-debiasing",
+    acl = "https://aclanthology.org/2024.findings-naacl.38",
+    arxiv = "2404.00463",
+    doi = "10.18653/v1/2024.findings-naacl.38",
+    pages = "561--582",
+    code = "https://github.com/hannahxchen/composed-debiasing",
     abstract = "Statistical fairness stipulates equivalent outcomes for every protected group, whereas causal fairness prescribes that a model makes the same prediction for an individual regardless of their protected characteristics. Counterfactual data augmentation (CDA) is effective for reducing bias in NLP models, yet models trained with CDA are often evaluated only on metrics that are closely tied to the causal fairness notion; similarly, sampling-based methods designed to promote statistical fairness are rarely evaluated for causal fairness. In this work, we evaluate both statistical and causal debiasing methods for gender bias in NLP models, and find that while such methods are effective at reducing bias as measured by the targeted metric, they do not necessarily improve results on other bias metrics. We demonstrate that combinations of statistical and causal debiasing techniques are able to reduce bias measured through both types of metrics."
 }
 
@@ -22,8 +36,8 @@
     year = "2022",
     publisher = "Association for Computational Linguistics",
     acl = "https://aclanthology.org/2022.emnlp-main.40",
-    arxiv="2210.11498",
-    code="https://github.com/hannahxchen/balanced-adversarial-training",
+    arxiv = "2210.11498",
+    code = "https://github.com/hannahxchen/balanced-adversarial-training",
     doi = "10.18653/v1/2022.emnlp-main.40",
     pages = "632--647",
     abstract = "Traditional (fickle) adversarial examples involve finding a small perturbation that does not change an input's true label but confuses the classifier into outputting a different prediction. Conversely, obstinate adversarial examples occur when an adversary finds a small perturbation that preserves the classifier's prediction but changes the true label of an input. Adversarial training and certified robust training have shown some effectiveness in improving the robustness of machine learnt models to fickle adversarial examples. We show that standard adversarial training methods focused on reducing vulnerability to fickle adversarial examples may make a model more vulnerable to obstinate adversarial examples, with experiments for both natural language inference and paraphrase identification tasks. To counter this phenomenon, we introduce Balanced Adversarial Training, which incorporates contrastive learning to increase robustness against both fickle and obstinate adversarial examples."
@@ -38,8 +52,8 @@
     address = "Online",
     publisher = "Association for Computational Linguistics",
     acl = "https://aclanthology.org/2020.findings-emnlp.426",
-    arxiv="2011.01856",
-    code="https://github.com/hannahxchen/automatic-paraphrase-dataset-augmentation",
+    arxiv = "2011.01856",
+    code = "https://github.com/hannahxchen/automatic-paraphrase-dataset-augmentation",
     doi = "10.18653/v1/2020.findings-emnlp.426",
     pages = "4741--4751",
     abstract = "Most NLP datasets are manually labeled, so suffer from inconsistent labeling or limited size. We propose methods for automatically improving datasets by viewing them as graphs with expected semantic properties. We construct a paraphrase graph from the provided sentence pair labels, and create an augmented dataset by directly inferring labels from the original sentence pairs using a transitivity property. We use structural balance theory to identify likely mislabelings in the graph, and flip their labels. We evaluate our methods on paraphrase models trained using these datasets starting from a pretrained BERT model, and find that the automatically-enhanced training sets result in more accurate models.",
@@ -54,7 +68,7 @@
     address = "Online",
     publisher = "Association for Computational Linguistics",
     acl = "https://aclanthology.org/2020.acl-srw.20",
-    arxiv="2005.11996",
+    arxiv = "2005.11996",
     doi = "10.18653/v1/2020.acl-srw.20",
     pages = "150--155",
     abstract = "The prevailing approach for training and evaluating paraphrase identification models is constructed as a binary classification problem: the model is given a pair of sentences, and is judged by how accurately it classifies pairs as either paraphrases or non-paraphrases. This pointwise-based evaluation method does not match well the objective of most real world applications, so the goal of our work is to understand how models which perform well under pointwise evaluation may fail in practice and find better methods for evaluating paraphrase identification models. As a first step towards that goal, we show that although the standard way of fine-tuning BERT for paraphrase identification by pairing two sentences as one sequence results in a model with state-of-the-art performance, that model may perform poorly on simple tasks like identifying pairs with two identical sentences. Moreover, we show that these models may even predict a pair of randomly-selected sentences with higher paraphrase score than a pair of identical ones.",
