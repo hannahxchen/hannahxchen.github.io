@@ -15,6 +15,12 @@ body {
   h6 {
     scroll-margin-top: 66px;
   }
+  p {
+    font-size: 1.2em;
+  }
+  .nav-item {
+    font-size: 1.2em;
+  }
 }
 
 body.fixed-top-nav {
@@ -39,6 +45,13 @@ body.sticky-bottom-footer {
 }
 
 .post-content {
+  h2 {
+    margin-bottom: 0.8rem;
+    margin-top: 1rem;
+  }
+  p {
+    font-size: 1.2em;
+  }
   table{
     margin-left: auto;
     margin-right: auto;
