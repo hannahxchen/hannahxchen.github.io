@@ -1,7 +1,6 @@
 {
     "basics": {
-      "name": "Hannah Chen",
-      "label": "PhD Student",
+      "name": "Hannah Cyberey",
       "image": "",
       "email": "yc4dx@virginia.edu",
       "summary": "",
@@ -22,38 +21,22 @@
     },
     "work": [
       {
-        "name": "Cryptography and Privacy Group, Microsoft Research",
+        "name": "Microsoft",
         "position": "Research Intern",
         "startDate": "2022-02-01",
-        "endDate": "2022-05-14",
-        "highlights": [
-            "Investigated privacy leakage in code generation models.", 
-            "Experimented with membership inference and training data reconstruction attack",
-            "Proposed several mitigation methods to improve current pipeline"
-        ]
+        "endDate": "2022-05-14"
       },
       {
-        "name": "Cybersecurity Technology Institute, Institute for Information Industry",
+        "name": "Institute for Information Industry",
         "position": "Machine Learning Intern",
         "startDate": "2018-06-01",
-        "endDate": "2018-12-31",
-        "highlights": [
-            "Exploratory data analysis of Tweets from security experts.", 
-            "Built binary classifiers for Secbuzzer System to identify security related Tweets.",
-            "Built and trained Word2Vec and Doc2Vec models to find similarity between contexts.",
-            "Built classification pipeline for streaming data stored in Elasticsearch."
-        ]
+        "endDate": "2018-12-31"
       },
       {
-        "name": "Lab of Ubiquitous Security and Applications, Chang Gung University",
+        "name": "Chang Gung University",
         "position": "Undergraduate Research Assistant",
         "startDate": "2018-06-01",
-        "endDate": "2018-12-31",
-        "highlights": [
-            "Participated in Prof. Chien-Lung Hsu’s IoT security research project.", 
-            "Implemented device authentication using NTRU encryption in Java.",
-            "Programmed Raspberry Pi sensors to capture environmental data."
-        ]
+        "endDate": "2018-12-31"
       }
     ],
     "education": [
@@ -112,14 +95,10 @@
     ],
     "languages": [
       {
-        "language": "English",
-        "fluency": "Fluent",
-        "icon": ""
+        "language": "English"
       },
       {
-        "language": "Mandarin Chinese",
-        "fluency": "Native speaker",
-        "icon": ""
+        "language": "Mandarin Chinese"
       }
     ]
   }
