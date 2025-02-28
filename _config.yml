@@ -264,7 +264,7 @@ display_categories: ["paper"] # these categories will be displayed on the front 
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: Chen
+  last_name: Cyberey
   first_name: [Hannah]
 
   style: association-for-computational-linguistics
