@@ -45,9 +45,10 @@ body.sticky-bottom-footer {
 }
 
 .post-content {
-  h2 {
-    margin-bottom: 0.8rem;
-    margin-top: 1rem;
+  h2, h3, h4 {
+    margin-bottom: 0.5em;
+    margin-top: 1.2em;
+    font-weight: bolder;
   }
   p {
     font-size: 1.2em;
@@ -69,6 +70,16 @@ body.sticky-bottom-footer {
     tr:nth-child(even) { 
       background-color: rgb(67, 89, 98); 
     }
+  }
+ 
+  div#image-container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+  div.footnotes p{
+    margin-bottom: 0.1em;
+    font-size: 1em;
   }
 }
 

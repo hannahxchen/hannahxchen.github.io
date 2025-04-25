@@ -19,6 +19,10 @@ strong {
   color: var(--global-text-color);
 }
 
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: 400;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -483,7 +487,7 @@ footer.sticky-bottom {
       .badge {
         color: var(--global-card-bg-color) !important;
         background-color: var(--global-theme-color) !important;
-        font-size: 80%;
+        font-size: .85rem;
       }
     }
   }

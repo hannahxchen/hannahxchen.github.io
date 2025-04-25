@@ -2,7 +2,6 @@
     "basics": {
       "name": "Hannah Cyberey",
       "image": "",
-      "email": "yc4dx@virginia.edu",
       "summary": "",
       "location": {
         "address": "Rice Hall 336, 85 Engineer’s Way",
@@ -21,22 +20,28 @@
     },
     "work": [
       {
+        "name": "University of Virginia",
+        "position": "Graduate Research Assistant",
+        "startDate": "2019-04",
+        "endDate": "now"
+      },
+      {
         "name": "Microsoft",
         "position": "Research Intern",
-        "startDate": "2022-02-01",
-        "endDate": "2022-05-14"
+        "startDate": "2022-02",
+        "endDate": "2022-05"
       },
       {
         "name": "Institute for Information Industry",
         "position": "Machine Learning Intern",
-        "startDate": "2018-06-01",
-        "endDate": "2018-12-31"
+        "startDate": "2018-06",
+        "endDate": "2018-12"
       },
       {
         "name": "Chang Gung University",
         "position": "Undergraduate Research Assistant",
-        "startDate": "2018-06-01",
-        "endDate": "2018-12-31"
+        "startDate": "2017-07",
+        "endDate": "2018-08"
       }
     ],
     "education": [
@@ -84,13 +89,6 @@
         "startDate": "2021-04",
         "endDate": "2021-05",
         "summary": "Participated in events and created activities for High School outreach programs."
-      },
-      {
-        "organization": "The Haven at Charlottesville",
-        "position": "Volunteer",
-        "startDate": "2021-04",
-        "endDate": "2021-06",
-        "summary": "Donation processing, food donation sorting, and cooking and serving food."
       }
     ],
     "languages": [
