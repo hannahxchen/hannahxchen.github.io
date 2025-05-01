@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-04-24T21:24:08-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-05-01T17:45:15-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">Steering the CensorShip: Uncovering Representation Vectors for LLM “Thought” Control</title><link href="http://localhost:4000/blog/2025/censorship-steering/" rel="alternate" type="text/html" title="Steering the CensorShip: Uncovering Representation Vectors for LLM “Thought” Control" /><published>2025-04-24T00:00:00-04:00</published><updated>2025-04-24T00:00:00-04:00</updated><id>http://localhost:4000/blog/2025/censorship-steering</id><content type="html" xml:base="http://localhost:4000/blog/2025/censorship-steering/"><![CDATA[<div class="image-container">
   <img src="/assets/img/censorship-steering/cover-photo.png" style="max-height: 320px;" />
 </div>
@@ -299,9 +299,13 @@
 
 <p><strong>TL;DR:</strong> Our work examines safety-tuned LLMs and discover representation vectors for measuring and controlling censorship imposed through refusal and thought suppression in model outputs.</p>
 
-<p style="line-height: 1.65em;"><strong>Paper</strong>: <a href="https://hannahxchen.github.io/">Hannah Cyberey</a> and <a href="http://www.cs.virginia.edu/~evans/">David Evans</a>. <a href="https://arxiv.org/abs/2504.17130"><em>Steering the CensorShip: Uncovering Representation Vectors for LLM “Thought” Control</em></a>. In arXiv Preprint, April 2025.<br />
-<strong>Demo</strong>: <a href="https://mightbeevil.com/censorship">https://mightbeevil.com/censorship</a><br />
-<strong>Code</strong>: <a href="https://github.com/hannahxchen/llm-censorship-steering">https://github.com/hannahxchen/llm-censorship-steering</a></p>
+<p style="margin-bottom: 0;"><strong>Paper</strong>: <a href="https://hannahxchen.github.io/">Hannah Cyberey</a> and <a href="http://www.cs.virginia.edu/~evans/">David Evans</a>. <a href="https://arxiv.org/abs/2504.17130"><em>Steering the CensorShip: Uncovering Representation Vectors for LLM “Thought” Control</em></a>. In arXiv Preprint, April 2025.<br />
+<strong>Demos</strong>:</p>
+<ul style="margin-bottom: .5em;">
+  <li>🐳 <a href="https://mightbeevil.com/censorship">Steering Thought Suppression</a> with DeepSeek-R1-Distill-Qwen-7B</li>
+  <li>🦙 <a href="https://hannahcyberey-refusal-censorship-steering.hf.space/">Steering Refusal—Compliance</a> with Llama-3.1-8B-Instruct</li>
+</ul>
+<p style="line-height: 1.65em;"><strong>Code</strong>: <a href="https://github.com/hannahxchen/llm-censorship-steering">https://github.com/hannahxchen/llm-censorship-steering</a></p>
 
 <hr />
 
