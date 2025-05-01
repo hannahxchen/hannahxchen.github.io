@@ -1,9 +1,6 @@
 "ACL":
   color: "#910978"
 
-"ACL SRW":
-  color: "#910978"
-
 "EMNLP":
   color: "#5b9113"
 
@@ -14,4 +11,13 @@
   color: "#329ea8"
 
 "NAACL Findings":
-  color: "#329ea8"
+  color: "#dc2192e0"
+
+"ACL SRW":
+  color: "#f7b600"
+
+"Insights Workshop":
+  color: "#f7b600"
+
+"Preprint":
+  color: "#2698ba"
