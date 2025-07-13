@@ -11,13 +11,16 @@
   color: "#329ea8"
 
 "NAACL Findings":
-  color: "#dc2192e0"
+  color: "#dd2382"
 
 "ACL SRW":
-  color: "#f7b600"
+  color: "#f5de00"
 
 "Insights Workshop":
-  color: "#f7b600"
+  color: "#f5de00"
 
 "Preprint":
   color: "#2698ba"
+
+"COLM":
+  color: "#ff8b00"
