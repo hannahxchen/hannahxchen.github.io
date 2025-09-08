@@ -21,9 +21,15 @@
     "work": [
       {
         "name": "University of Virginia",
+        "position": "Postdoctoral Research Associate",
+        "startDate": "2025-09",
+        "endDate": "Now"
+      },
+      {
+        "name": "University of Virginia",
         "position": "Graduate Research Assistant",
         "startDate": "2019-04",
-        "endDate": "now"
+        "endDate": "2025-08"
       },
       {
         "name": "Microsoft",
@@ -52,7 +58,7 @@
         "area": "Computer Science",
         "studyType": "PhD",
         "startDate": "2019-08",
-        "endDate": "now"
+        "endDate": "2025-08"
       },
       {
         "institution": "Chang Gung University",
