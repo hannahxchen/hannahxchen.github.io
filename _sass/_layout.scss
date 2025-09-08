@@ -17,6 +17,7 @@ body {
   }
   p {
     font-size: 1.2em;
+    font-weight: 360;
   }
   .nav-item {
     font-size: 1.2em;
@@ -41,6 +42,16 @@ body.sticky-bottom-footer {
 .profile {
   img {
     width: 100%;
+  }
+}
+
+.news {
+  margin-bottom: .8em;
+  table{
+    th, td{
+      padding-top: .3rem;
+      padding-bottom: .3rem;
+    }
   }
 }
 
