@@ -1,5 +1,18 @@
 ---
 ---
+@inproceedings{cyberey2025sensing,
+    abbr = {EMNLP},
+    title = {Sensing and Steering Stereotypes: Extracting and Applying Gender Representation Vectors in LLMs}, 
+    author = {Hannah Cyberey and Yangfeng Ji and David Evans},
+    month = nov,
+    year = {2025},
+    booktitle = "EMNLP 2025",
+    arxiv = {2502.19721},
+    acl = {https://aclanthology.org/2025.emnlp-main.1439}, 
+    code = "https://github.com/hannahxchen/gender-bias-steering",
+    abstract = "Large language models (LLMs) are known to perpetuate stereotypes and exhibit biases. Various strategies have been proposed to mitigate these biases, but most work studies biases as a black-box problem without considering how concepts are represented within the model. We adapt techniques from representation engineering to study how the concept of ``gender'' is represented within LLMs. We introduce a new method that extracts concept representations via probability weighting without labeled data and efficiently selects a steering vector for measuring and manipulating the model{'}s representation. We develop a projection-based method that enables precise steering of model predictions and demonstrate its effectiveness in mitigating gender bias in LLMs and show that it also generalizes to racial bias."
+}
+
 @inproceedings{cyberey2025steering,
     abbr = {COLM},
     title = {Steering the CensorShip: Uncovering Representation Vectors for LLM ``Thought'' Control}, 
@@ -21,34 +34,10 @@
     month = may,
     year = "2025",
     publisher = "Association for Computational Linguistics",
-    acl = "https://aclanthology.org/2025.insights-1.5/",
-    abstract = "Allocational harms occur when resources or opportunities are unfairly withheld from specific groups. Many proposed bias measures ignore the discrepancy between predictions, which are what the proposed methods consider, and decisions that are made as a result of those predictions. Our work examines the reliability of current bias metrics in assessing allocational harms arising from predictions of large language models (LLMs). We evaluate their predictive validity and utility for model selection across ten LLMs and two allocation tasks. Our results reveal that commonly-used bias metrics based on average performance gap and distribution distance fail to reliably capture group disparities in allocation outcomes. Our work highlights the need to account for how model predictions are used in decisions, in particular in contexts where they are influenced by how limited resources are allocated."
-}
-
-@article{cyberey2025sensing,
-    abbr = {Preprint},
-    title = {Sensing and Steering Stereotypes: Extracting and Applying Gender Representation Vectors in LLMs}, 
-    author = {Hannah Cyberey and Yangfeng Ji and David Evans},
-    month = feb,
-    year = {2025},
-    journal = "ArXiv Preprint",
-    arxiv = {2502.19721},
-    url = {https://arxiv.org/abs/2502.19721}, 
-    code = "https://github.com/hannahxchen/gender-bias-steering",
-    abstract = "Large language models (LLMs) are known to perpetuate stereotypes and exhibit biases. Various strategies have been proposed to mitigate potential harms that may result from these biases, but most work studies biases in LLMs as a black-box problem without considering how concepts are represented within the model. We adapt techniques from representation engineering to study how the concept of ``gender'' is represented within LLMs. We introduce a new method that extracts concept representations via probability weighting without labeled data and efficiently selects a steering vector for measuring and manipulating the model's representation. We also present a projection-based method that enables precise steering of model predictions and demonstrate its effectiveness in mitigating gender bias in LLMs."
-}
-
-@article{chen2024mismeasure,
-    abbr = {Preprint},
-    title = {The Mismeasure of Man and Models: Evaluating Allocational Harms in Large Language Models}, 
-    author = {Hannah Cyberey and Yangfeng Ji and David Evans},
-    month = aug,
-    year = {2024},
-    journal = "ArXiv Preprint",
     arxiv = {2408.01285},
-    url = {https://arxiv.org/abs/2408.01285}, 
+    acl = "https://aclanthology.org/2025.insights-1.5/",
     code = "https://github.com/hannahxchen/llm-allocational-harm-eval",
-    abstract = "Large language models (LLMs) are now being considered and even deployed for applications that support high-stakes decision-making, such as recruitment and clinical decisions. While several methods have been proposed for measuring bias, there remains a gap between predictions, which are what the proposed methods consider, and how they are used to make decisions. In this work, we introduce Rank-Allocational-Based Bias Index (RABBI), a model-agnostic bias measure that assesses potential allocational harms arising from biases in LLM predictions. We compare RABBI and current bias metrics on two allocation decision tasks. We evaluate their predictive validity across ten LLMs and utility for model selection. Our results reveal that commonly-used bias metrics based on average performance gap and distribution distance fail to reliably capture group disparities in allocation outcomes, whereas RABBI exhibits a strong correlation with allocation disparities. Our work highlights the need to account for how models are used in contexts with limited resource constraints."
+    abstract = "Allocational harms occur when resources or opportunities are unfairly withheld from specific groups. Many proposed bias measures ignore the discrepancy between predictions, which are what the proposed methods consider, and decisions that are made as a result of those predictions. Our work examines the reliability of current bias metrics in assessing allocational harms arising from predictions of large language models (LLMs). We evaluate their predictive validity and utility for model selection across ten LLMs and two allocation tasks. Our results reveal that commonly-used bias metrics based on average performance gap and distribution distance fail to reliably capture group disparities in allocation outcomes. Our work highlights the need to account for how model predictions are used in decisions, in particular in contexts where they are influenced by how limited resources are allocated."
 }
 
 @inproceedings{chen-etal-2024-addressing,
