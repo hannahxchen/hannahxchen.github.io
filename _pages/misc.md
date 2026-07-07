@@ -10,9 +10,7 @@ nav_order: 5
 <!-- pages/mycats.md -->
 <div class="mycats">
     <h3>My Cats</h3>
-    <p>Follow them on instagram: <a href="https://www.instagram.com/the_asshole_cat/">@the_asshole_cat</a></p>
-    <p>It was created initially for Marshall. (Hayley's an angel not an a-hole)</p>
-    <p>I post pictures, stories, and videos of them occasionally.</p>
+    <br/>
     <h4 class="category">Marshall</h4>
     <div class="container">
         <div class="row  row-cols-1 row-cols-md-4">
@@ -37,4 +35,5 @@ nav_order: 5
         {%- endfor %}
         </div>
     </div>
+    <p>Checkout <a href="https://www.instagram.com/the_asshole_cat/">@the_asshole_cat</a> for more!</p>
 </div>
